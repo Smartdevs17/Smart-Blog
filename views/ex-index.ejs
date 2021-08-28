@@ -1,0 +1,59 @@
+<%- include("partials/header") %> 
+
+
+
+
+
+
+
+
+
+
+<div class="mag">
+    <div class="container">
+        <h1>The Lord Is My Helper</h1>
+    </div>
+    <div class="container-item">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores placeat vel aut inventore nam consectetur quis ab quia eligendi esse officia eius sequi, qui ratione eum dignissimos delectus! Necessitatibus inventore quam perspiciatis quidem illo quisquam officiis. Deleniti mollitia esse hic odio unde, aliquid facere eum quisquam repellendus modi soluta culpa commodi quia voluptatibus aut eveniet ducimus doloremque sapiente! Tempore voluptate harum explicabo dolores error, illo, recusandae enim odio tempora quis magnam placeat ad natus exercitationem maiores, ipsam eaque officiis nemo laborum maxime earum. Voluptatum et quos adipisci esse. Neque nulla reprehenderit suscipit esse quam possimus obcaecati doloremque, quo culpa dignissimos? </p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="mag">
+   <%  post.forEach(function(post){ %>
+
+    <h1><%=post.title%></h1>
+    <p>
+    <%=post.content.substring(0, 100) + " ..."%>
+    <a href="/posts/<%=post.title%>">Read More</a>
+    </p>
+
+
+    <% }) %>
+</div> 
+
+
+
+
+<!-- 
+
+<div class="container">
+    <h1><%= post.title %> </h1>
+</div>
+<div class="container-item">
+    <p><%= post.content %> </p>
+</div> -->
+
+
+
+
+
+
+
+<%- include("partials/footer") %> 

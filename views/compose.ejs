@@ -1,0 +1,44 @@
+<%- include("partials/header") %> 
+
+
+
+
+
+
+
+<div class="mag">
+    <div class="form-group"><h1>COMPOSE</h1></div>
+    
+<form action="/compose" method="post">
+    <div class="form-group">
+        <label for="">Title</label><br>
+        <input class="form-control" type="text" name="blogTitle">
+    </div>
+    <div class="form-group">
+    <label for="">Date</label>
+    <input name="blogDate" class="form-control" type="text"></input>
+   </div><br>
+   <div class="form-group">
+    <label for="">Post</label>
+    <textarea name="blogPost" class="form-control" id="" cols="30" rows="5"></textarea>
+   </div><br>
+    
+    <button class="btn btn-primary" type="submit">Publish</button>
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include("partials/footer") %> 
