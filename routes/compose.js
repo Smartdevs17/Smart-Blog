@@ -1,8 +1,13 @@
 const express = require("express");
 const router = express.Router();
+const mongoose = require("mongoose");
 
 
-router.get("/compose",function (req,res) {
+
+
+const Content = require("../models/content");
+
+router.get("/",function (req,res) {
     res.render("compose");
 });
 
