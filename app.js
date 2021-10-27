@@ -46,7 +46,12 @@ app.use("/posts",postsRoute);
 
 
 
-module.exports = app;
+const PORT = process.env.PORT || 3001
+
+
+app.listen(PORT, function() {
+  console.log("Server has started Successfully " + PORT);
+});
 
 
 
