@@ -7,7 +7,7 @@ const _ = require("lodash");
 const mongoose = require("mongoose");
 
 // mongoose.connect("mongodb://localhost:27017/blogDB",{useNewUrlParser: true, useUnifiedTopology: true});
-mongoose.connect("mongodb+srv://admin-developer:@cluster0.ad9lh.mongodb.net/cleanerDB",{pass: process.env.DB_PASSWORD,useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://admin-developer:smartdeveloper@cluster0.ad9lh.mongodb.net/cleanerDB",{useNewUrlParser: true, useUnifiedTopology: true});
 
 
 const db = mongoose.connection;
